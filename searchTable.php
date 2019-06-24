@@ -16,22 +16,20 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.js">
 	<link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/js/lightbox.js">
 </head>
 <body>
 <?php
 include 'connect.php';
-
 $sql= "select count(*) from supplier";
-
 $result = mysqli_query($conn ,$sql);
 $row = mysqli_fetch_row($result);
 $number = $row[0];
 echo "<h4> We have $number items</h4>"
-
 ?>
 
 <div class="container">
-
     <table class="table" id="example">
         <thead>
         <tr>
@@ -48,14 +46,12 @@ echo "<h4> We have $number items</h4>"
         while($row =mysqli_fetch_array($result))
         {
             echo"<tr>";
-//            echo"<td>$row[0]</td>";
             echo"<td>$row[1]</td>";
-//            echo"<td>$row[2]</td>";
-//            echo"<td>$row[3]</td>";
-//            echo"<td>$row[4]</td>";
             echo"<td>$row[5]</td>";
             echo"<td>$row[6]</td>";
-            echo"<td><img src='images/".$row['Photo']."'></td>";
+            echo"<td>
+<img src='images/.$row[7]' height='150' width='200'>
+</td>";
             echo"</tr>";
         }
         ?>

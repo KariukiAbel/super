@@ -40,6 +40,7 @@ alert('Log in successful..!!');location.href='Customer/index.php';
 </script>";
 
     }
+
     else{
         echo "<script>
 alert('Wrong username or password');

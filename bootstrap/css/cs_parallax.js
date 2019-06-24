@@ -64,7 +64,7 @@
 		'maxWidth': video_height * ratio + 'px',
 		bottom: 0
 		});
-		}
+		};
 		if (speedFactor == 1) return;
 		var doScroll = function(){
 		if ($(window).width() < 768) return;
@@ -104,12 +104,12 @@
 		$('.exp-videobg-control-btn',$this).click(function(e){
 			e.stopPropagation();
 			playVideo(video);	
-		})
+		});
 		$('.ww-video-bg,.stripe-video-content,video',$this).click(function(e){
 			e.stopPropagation();
 			pauseVideo(video);	
 		})
-    })
+    });
 	function playVideo(video){
 		if (video.get(0).paused == true) {
 			video.get(0).play();

@@ -15,7 +15,7 @@
 <body>
 <div class="container">
 	<div class="row">
-        <a id="im" href="images/">Images</a>
+<!--        <a id="im" href="images/">Images</a>-->
         <div class="col-md-2 col-md-offset-9" id="dr" style="padding-top: 35px">
             <div class="dropdown">
                     <span class="glyphicon glyphicon-th"><span class="caret" role="button"></span></span>
@@ -95,7 +95,7 @@
     <ul>
         <li id="log">
             <button>
-                <a href="login.php">Log in <span class="glyphicon glyphicon-user"></span></a>
+                <a href="login.php"><?php echo $_SESSION['Name']?>Log in <span class="glyphicon glyphicon-user"></span></a>
             </button>
 
         </li>
@@ -109,12 +109,12 @@
             <h2 style="text-align: center">Online Supermarket</h2>
             <form role="search" action="serch.php" method="post">
                 <div>
-                    <img src="images/">
+                    <img src="images/LOGO.png" width="150" height="120">
                 </div>
 
                 <br>
             <div>
-                <input type="search" class="form-control" name="tafuta" id="look" >
+                <input type="text" class="form-control" name="tafuta" id="look" >
             </div>
                 <br>
             <button class="btn btn-default" name="see" id="btn">Search </button>

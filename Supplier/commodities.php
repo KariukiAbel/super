@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label>Picture of the commodity</label>
-                <input type="file" name="image" required>
+                <input type="file" name="file" required>
                 <br>
             </div>
             <button type="submit" class="btn btn-success" name="sub">Register Commodity</button>

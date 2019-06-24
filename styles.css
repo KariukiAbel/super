@@ -23,7 +23,7 @@
     border-style: groove;
 }
 #form{
-    margin-top: 12%;
+    margin-top:7%;
 }
 ul{
     list-style: none;
@@ -66,5 +66,12 @@ li{
     margin-left:70%;
 
 }
+img{
+    margin-left: 125px;
+}
+#btn3,#btn4{
+    margin-top: 45px;
+}
+
 
 
