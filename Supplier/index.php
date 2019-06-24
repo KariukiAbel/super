@@ -45,6 +45,14 @@
                 <label>Location</label>
                 <input type="text" class="form-control" name="loc" required>
             </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="pass" required>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" name="conpass" required>
+            </div>
             <span class="glyphicon-save">
             <button type="submit" class="btn btn-danger">Register</button>
                 <br>

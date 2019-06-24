@@ -22,7 +22,7 @@ if ($count==1){
         $_SESSION['Email'] = $mail;
 
         echo "<script>
-alert('Log in successful..!!');location.href='Supplier/index.php';
+alert('Log in successful..!!');location.href='Supplier/commodities.php';
 </script>";
 }
 else{

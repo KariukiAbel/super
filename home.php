@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.bundle.js">
     <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" type="text/css" href="bootstrap/js/jquery.min.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/jquery.min.js">
 </head>
 <body>
 <div class="container">
@@ -109,7 +108,7 @@
             <h2 style="text-align: center">Online Supermarket</h2>
             <form role="search" action="serch.php" method="post">
                 <div>
-                    <img src="images/LOGO.png" width="150" height="120">
+                    <img src="images/LOGO.png" width="120" height="150">
                 </div>
 
                 <br>

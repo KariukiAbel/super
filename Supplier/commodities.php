@@ -16,19 +16,24 @@
                 <label>Commodity Name</label>
                 <input type="text" class="form-control" name="comname" required>
             </div>
-<!--            <div class="form-group">-->
-<!--                <label>Commodity ID</label>-->
-<!--                <input type="text" class="form-control" name="comid" required>-->
-<!--            </div>-->
+            <div class="form-group">
+                <label>Unit of Measure</label>
+                <input type="text" class="form-control" name="measure" required>
+            </div>
+
+            <div class="form-group">
+                <label>Supplier Name</label>
+                <input type="text" class="form-control" name="com" required>
+            </div>
             <div class="form-group">
                 <label>Price</label>
                 <input type="number" class="form-control" name="price" required>
             </div>
-            <div class="form-group">
-                <label>Picture of the commodity</label>
-                <input type="file" name="file" required>
-                <br>
-            </div>
+<!--            <div class="form-group">-->
+<!--                <label>Picture of the commodity</label>-->
+<!--                <input type="file" name="file" required>-->
+<!--                <br>-->
+<!--            </div>-->
             <button type="submit" class="btn btn-success" name="sub">Register Commodity</button>
 <br><br>
         </form>

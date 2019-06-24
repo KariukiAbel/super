@@ -325,6 +325,8 @@ if ( typeof window[ 'vc_tabsBehaviour' ] !== 'function' ) {
 		}
 	}
 }
+;
+
 /* Tabs + Tours
  ---------------------------------------------------------- */
 if ( typeof window[ 'vc_accordionBehaviour' ] !== 'function' ) {
@@ -655,7 +657,7 @@ if ( typeof window[ 'vc_rowBehaviour' ] !== 'function' ) {
 				return vcParallaxSkroll;
 			}
 			return false;
-		};
+		}
 		$( window ).unbind( 'resize.vcRowBehaviour' ).bind( 'resize.vcRowBehaviour', local_function );
 		local_function();
 		parallaxRow();
@@ -709,7 +711,7 @@ function getSizeName() {
 
 function loadScript( url, $obj, callback ) {
 
-	var script = document.createElement( "script" );
+	var script = document.createElement( "script" )
 	script.type = "text/javascript";
 
 	if ( script.readyState ) {  //IE

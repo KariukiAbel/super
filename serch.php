@@ -9,7 +9,7 @@ extract($_POST);
     include 'connect.php';
 
     ?>
-<!DOCTYPE html></<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,32 +26,27 @@ extract($_POST);
     <title>Documents</title>
 </head>
 <body>
-
 <div class="container">
-
     <table class="table" id="example">
         <thead>
         <tr>
-            <th>ID</th>
             <th>Commodity Name</th>
+            <th>Supplier Name</th>
              <th>Price</th>
-            <th>Photo</th>
+            <th style="text-align: center">Photo</th>
             <th></th>
         </tr>
         <tbody>
         <?php
-        $id=$_REQUEST['ID'];
         $sql="select * from supplier  where Commodity_Name like '%$tafuta%'";
         $result=mysqli_query($conn,$sql);
         while($row =mysqli_fetch_array($result))
         {
             echo"<tr>";
-            echo"<td>$row[0]</td>";
             echo"<td>$row[1]</td>";
-            echo"<td>$row[6]</td>";
-            echo "<td>
-<img src='images/.$row[7]'height='120px' width='200px'> 
-</td>";
+            echo"<td>$row[4]</td>";
+            echo"<td>$row[5]</td>";
+            echo"<td><img src='images/.$row[6]'height='120' width='200'> </td>";
             echo "<td><a href='Customer/details.php'><button class='btn btn-primary' id='btn3'>Order</button></a></td>";
             echo "<td><a href='Supplier/details.php'><button class='btn btn-danger' id='btn4'>View</button></a></td>";
             echo"</tr>";
@@ -60,10 +55,7 @@ extract($_POST);
 
         </tbody>
         </thead>
-
-
     </table>
-
 </div>
 
 <link rel="stylesheet" href="bootstrap/css/dataTables.css"/>

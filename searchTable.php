@@ -33,25 +33,30 @@ echo "<h4> We have $number items</h4>"
     <table class="table" id="example">
         <thead>
         <tr>
+            <th>ID</th>
             <th>Commodity Name</th>
-            <th>Supplier</th>
+            <th>Unit of Measure</th>
+<!--            <th>Email of Supplier</th>-->
+            <th>Supplier Name</th>
             <th>Price</th>
-            <th>Photo</th>
+            <th style="text-align: center">Photo</th>
             <th></th>
              </tr>
         <tbody>
         <?php
         $sql="select * from supplier";
         $result=mysqli_query($conn,$sql);
+        $mrow=mysqli_fetch_array($result);
         while($row =mysqli_fetch_array($result))
         {
             echo"<tr>";
+            echo"<td>$row[0]</td>";
             echo"<td>$row[1]</td>";
+            echo"<td>$row[2]</td>";
+//            echo"<td>$row[3]</td>";
+            echo"<td>$row[4]</td>";
             echo"<td>$row[5]</td>";
-            echo"<td>$row[6]</td>";
-            echo"<td>
-<img src='images/.$row[7]' height='150' width='200'>
-</td>";
+            echo"<td><img src='images/.$row[6]' height='120' width='200'></td>";
             echo"</tr>";
         }
         ?>
