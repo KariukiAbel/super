@@ -27,13 +27,8 @@
     </ul>
 <!--    <ul class="nav navbar-nav navbar-right">-->
     <ul class="nav navbar-nav ml-auto">
-        <li><a href="process_login.php"><span class="glyphicon glyphicon-user">
-                        </span><?php echo $_SESSION['names']?></a></li>
+        <li><a href="process_login.php"><span class="g">
+                        </span><?php echo $_SESSION['Name']?></a></li>
         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
 </nav>
-
-<div class="container-fluid">
-    <h3>Brand / Logo</h3>
-    <p>When using the .navbar-brand class on images, Bootstrap 4 will automatically style the image to fit the navbar.</p>
-</div>

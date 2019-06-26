@@ -29,11 +29,11 @@
                 <label>Price</label>
                 <input type="number" class="form-control" name="price" required>
             </div>
-<!--            <div class="form-group">-->
-<!--                <label>Picture of the commodity</label>-->
-<!--                <input type="file" name="file" required>-->
-<!--                <br>-->
-<!--            </div>-->
+            <div class="form-group">
+                <label>Picture of the commodity</label>
+                <input type="file" name="file" required>
+                <br>
+            </div>
             <button type="submit" class="btn btn-success" name="sub">Register Commodity</button>
 <br><br>
         </form>

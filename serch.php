@@ -38,7 +38,7 @@ extract($_POST);
         </tr>
         <tbody>
         <?php
-        $sql="select * from supplier  where Commodity_Name like '%$tafuta%'";
+        $sql="select * from supplier  where Commodity_Name like '%$tafuta%' order by ID desc ";
         $result=mysqli_query($conn,$sql);
         while($row =mysqli_fetch_array($result))
         {
@@ -46,9 +46,9 @@ extract($_POST);
             echo"<td>$row[1]</td>";
             echo"<td>$row[4]</td>";
             echo"<td>$row[5]</td>";
-            echo"<td><img src='images/.$row[6]'height='120' width='200'> </td>";
+            echo"<td><img src='images/$row[6]'height='120' width='200'> </td>";
             echo "<td><a href='Customer/details.php'><button class='btn btn-primary' id='btn3'>Order</button></a></td>";
-            echo "<td><a href='Supplier/details.php'><button class='btn btn-danger' id='btn4'>View</button></a></td>";
+            echo "<td><a href='?id='echo $row[0];><button class='btn btn-danger' id='btn4'>View</button></a></td>";
             echo"</tr>";
         }
         ?>

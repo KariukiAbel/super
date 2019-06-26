@@ -33,14 +33,22 @@
             <div class="row" style="border: solid 1px">Partner Links</div>
             </div>
 
-        <div class="col-sm-7" style="border: solid 1px">Search</div>
-        <div class="col-sm-3" style="border: solid 1px">Service chartter
+        <div class="col-sm-7" style="border: solid 1px">
+            <div class="row">
+                <div class="col-md-4" style="border: solid 1px">ssssss</div>
+                 <div class="col-md-4" style="border: solid 1px">vvvvvv</div>
+                 <div class="col-md-4" style="border: solid 1px">ffffff</div>
+            </div>
+        </div>
+
+           <div class="col-sm-3" style="border: solid 1px">Service chartter
             <div class="row" style="border: solid 1px">aaaaaa</div>
             <div class="row" style="border: solid 1px">aaaaaa</div>
             <div class="row" style="border: solid 1px">
                 <div class="col-md-4" style="border: solid 1px">vvvvvvvv</div>
                 <div class="col-md-4" style="border: solid 1px">vvvvvvvv</div>
-                <div class="col-md-4" style="border: solid 1px">vvvvvvvv</div>
+                <div class="col-md-4" style="border: solid 1px"
+                >vvvvvvvv</div>
             </div>
         </div>
     </div>

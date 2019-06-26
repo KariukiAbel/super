@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 21, 2019 at 04:42 PM
+-- Generation Time: Jun 26, 2019 at 03:33 PM
 -- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
@@ -53,29 +53,40 @@ INSERT INTO `Customer_Details` (`ID`, `First_Name`, `Last_Name`, `Email`, `Phone
 CREATE TABLE `supplier` (
   `ID` int(11) NOT NULL,
   `Commodity_Name` varchar(50) NOT NULL,
-  `Commodity_ID` varchar(50) NOT NULL,
-  `Supplier_ID` varchar(50) NOT NULL,
+  `Unit_Measure` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Supplier_Name` varchar(50) NOT NULL,
   `Price` varchar(50) NOT NULL,
-  `Photo` varchar(100) NOT NULL
+  `Photo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `supplier`
 --
 
-INSERT INTO `supplier` (`ID`, `Commodity_Name`, `Commodity_ID`, `Supplier_ID`, `Email`, `Supplier_Name`, `Price`, `Photo`) VALUES
-(2, 'Bathing soap', '', '', '', '', 'Ksh 500', ''),
-(3, 'Washing Soap', '', '', '', '', 'Ksh 200', 'Supplier/images'),
-(4, 'Milk', '', '', '', '', 'Ksh 50', 'pic'),
-(5, 'Tyres', '', '', '', '', 'Ksh 12000', ''),
-(6, 'Bic pen', '', '', '', '', 'Ksh 20', ''),
-(7, 'Bread', '', '', '', '', 'Ksh 50', ''),
-(8, 'Pencil', '', '', '', '', 'Ksh 10', ''),
-(9, 'Sugar', '', '', '', '', 'Ksh 20', ''),
-(10, 'Books', '', '', '', '', 'Ksh 100', ''),
-(11, 'Shoes', '', '', '', '', 'Ksh 100', '');
+INSERT INTO `supplier` (`ID`, `Commodity_Name`, `Unit_Measure`, `Email`, `Supplier_Name`, `Price`, `Photo`) VALUES
+(2, 'Bathing soap', '', '', '', 'Ksh 500', ''),
+(3, 'Washing Soap', '', '', '', 'Ksh 200', 'Supplier/images'),
+(4, 'Milk', '', '', '', 'Ksh 50', 'pic'),
+(5, 'Tyres', '', '', '', 'Ksh 12000', ''),
+(6, 'Bic pen', '', '', '', 'Ksh 20', ''),
+(7, 'Bread', '', '', '', 'Ksh 50', ''),
+(8, 'Pencil', '', '', '', 'Ksh 10', ''),
+(9, 'Sugar', '', '', '', 'Ksh 20', ''),
+(10, 'Books', '', '', '', 'Ksh 100', ''),
+(11, 'Shoes', '', '', '', 'Ksh 100', ''),
+(12, 'Pears', '', '', '', 'Ksh 30', ''),
+(13, 'paper', '', '', '', '800', ''),
+(14, 'Tuzo Milk', '56235', 'abelmuriithi13@outlook.com', 'Tuzo', '60', '5d108e77792b97.26300413.jpg'),
+(15, 'KCC Milk', '56225', 'abelmuriithi13@outlook.com', 'Kenya Cooperative Creameries', 'Ksh 55', ''),
+(16, 'Bic Sharp pointed pen', '', '', '', 'Ksh 20', ''),
+(17, 'Bic ball point pen', '', '', '', '15', ''),
+(18, 'Diva Soap', '', '', '', '300', ''),
+(19, 'Paper ON', 'Ream', '', 'Ngariama', '3000', ''),
+(21, 'Paper ON', '2 Reams', '', 'Tuskys', 'Ksh 2500', ''),
+(22, 'Paper ON', 'Ream', '', 'Abel', 'Ksh 2500', ''),
+(23, 'Paper ON', 'Ream', '', 'Kasmart', 'Ksh 2300', '5d1325458eb398.35820572.'),
+(24, 'Bic pen', '2 dozens', '', 'Bic Coorp', 'Ksh 240', '5d13649db89719.29674828.');
 
 -- --------------------------------------------------------
 
@@ -137,13 +148,13 @@ ALTER TABLE `Customer_Details`
 -- AUTO_INCREMENT for table `supplier`
 --
 ALTER TABLE `supplier`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `supplier1`
 --
 ALTER TABLE `supplier1`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

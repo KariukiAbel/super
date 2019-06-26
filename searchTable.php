@@ -44,9 +44,8 @@ echo "<h4> We have $number items</h4>"
              </tr>
         <tbody>
         <?php
-        $sql="select * from supplier";
+        $sql="select * from supplier order by ID desc ";
         $result=mysqli_query($conn,$sql);
-        $mrow=mysqli_fetch_array($result);
         while($row =mysqli_fetch_array($result))
         {
             echo"<tr>";
@@ -56,7 +55,7 @@ echo "<h4> We have $number items</h4>"
 //            echo"<td>$row[3]</td>";
             echo"<td>$row[4]</td>";
             echo"<td>$row[5]</td>";
-            echo"<td><img src='images/.$row[6]' height='120' width='200'></td>";
+            echo"<td><img src='images/$row[6]' height='120' width='200'></td>";
             echo"</tr>";
         }
         ?>
