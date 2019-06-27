@@ -55,7 +55,7 @@ echo "<h4> We have $number items</h4>"
 //            echo"<td>$row[3]</td>";
             echo"<td>$row[4]</td>";
             echo"<td>$row[5]</td>";
-            echo"<td><img src='images/$row[6]' height='120' width='200'></td>";
+            echo"<td><img src='Supplier/images/$row[6]' height='120' width='200'></td>";
             echo"</tr>";
         }
         ?>

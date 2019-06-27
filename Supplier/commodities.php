@@ -11,7 +11,7 @@
 <div class="container">
     <div class="col-md-4 col-md-offset-4" id="col">
         <h3 class="text-center">Register Commodity Here</h3>
-        <form role="form" action="addcommodity.php" method="post">
+        <form role="form" action="addcommodity.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label>Commodity Name</label>
                 <input type="text" class="form-control" name="comname" required>

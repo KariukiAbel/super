@@ -14,7 +14,7 @@ if (isset($_POST['sub'])) {
     $suppliername =$_POST['com'];
     $price =$_POST['price'];
     $file =$_FILES['file'];
-    print_r($file);
+    //print_r($file);
 
     $fileName=$_FILES['file']['name'];
     $fileTmpName=$_FILES['file']['tmp_name'];
@@ -26,12 +26,12 @@ if (isset($_POST['sub'])) {
     $fileActualExt=strtolower(end($fileExt));
     $allowed=array('jpg','jpeg','png');
 
-    if (in_array($allowed,$fileActualExt)){
+    if (in_array($fileActualExt,$allowed)){
         if ($fileError===0){
             if ($fileSize < 5000000){
                 $fileNameNew=uniqid('',true).".".$fileActualExt;
                 $fileDestination='images/'.$fileNameNew;
-                move_uploaded_file($fileTmpName,$fileDestination);
+
 
                 $sql="select * from supplier where Commodity_Name='$comname' and Supplier_name='$suppliername'";
                 $result=mysqli_query($conn,$sql);
@@ -39,8 +39,10 @@ if (isset($_POST['sub'])) {
 
                 if ($count<1){
                     $sql2="insert into supplier (`ID`, `Commodity_Name`, `Unit_Measure`,  `Supplier_Name`, `Price`, `Photo`) 
-                    values (null,'$comname','$measure','$suppliername','$price','$fileNameNew')";
+                    values (null,'$comname','$measure','$suppliername','Ksh $price','$fileNameNew')";
                     $query=mysqli_query($conn,$sql2);
+                    move_uploaded_file($fileTmpName,$fileDestination);
+                    echo "<script>alert('Upload sucessfull..');location.href='../searchTable.php'</script>";
                 }
                 else{
                     echo "<script>
