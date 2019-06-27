@@ -48,8 +48,8 @@ extract($_POST);
             echo"<td>$row[5]</td>";
             echo"<td><img src='Supplier/images/$row[6]'height='120' width='200'> </td>";
             echo "<td><a href='Customer/details.php'><button class='btn btn-primary' id='btn3'>Order</button></a></td>";
-            echo "<td><a href='?id='echo $row[0];><button class='btn btn-danger' id='btn4'>View</button></a></td>";
-            echo"</tr>";
+            echo "<td><a href='Supplier/view.php'><button class='btn btn-danger' id='btn4'>View</button></a></td>";
+                       echo"</tr>";
         }
         ?>
 
