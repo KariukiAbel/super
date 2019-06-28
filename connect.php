@@ -8,5 +8,5 @@
 
 $conn=mysqli_connect("127.0.0.1","root","","Logistics");
 if (!$conn){
-    echo mysqli_connect_error("Failed to connect to database ",$db);
+    echo mysqli_connect_error("Failed to connect to database ",$conn);
 }

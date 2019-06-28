@@ -31,7 +31,7 @@
             </div>
             <div class="form-group">
                 <label>Picture of the commodity</label>
-                <input type="file" name="file" required>
+                <input type="file" name="file[]" multiple required>
                 <br>
             </div>
             <button type="submit" class="btn btn-success" name="sub">Register Commodity</button>

@@ -1,7 +1,7 @@
 <?php
 //secure
 session_start();
-if(!isset( $_SESSION['Email']))
+if(!isset( $_SESSION['Name']))
 {
    header("location:login.php");
 }

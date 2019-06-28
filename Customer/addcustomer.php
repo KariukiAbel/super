@@ -18,13 +18,13 @@ if($count==0){
     $query2=mysqli_query($conn,$sql2) or die(mysqli_error($conn));
     echo "<script>
 alert('Details added sucessfully..');
-location.href='../home.php';
+location.href='../login.php';
 </script>";
 }
 else{
     echo '<script>
 alert("Details already exists..");
-location.href="../register.php";
+location.href="../index.php";
 </script>';
 }}
 else{

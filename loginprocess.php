@@ -31,12 +31,12 @@ else{
     $count2=mysqli_num_rows($result2);
     if ($count2==1){
         $fetch = mysqli_fetch_row($result2);
-        $names = $fetch[1];
+        $names = $fetch[1][2];
         session_start();
         $_SESSION['Name'] = $names;
         $_SESSION['Email'] = $mail;
         echo "<script>
-alert('Log in successful..!!');location.href='Customer/index.php';
+alert('Log in successful..!!');location.href='../index.php';
 </script>";
 
     }
@@ -44,7 +44,7 @@ alert('Log in successful..!!');location.href='Customer/index.php';
     else{
         echo "<script>
 alert('Wrong username or password');
-location.href='home.php';
+location.href='login.php';
 </script>";
     }
 }

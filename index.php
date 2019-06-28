@@ -24,8 +24,9 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/js/jquery.min.js">
 </head>
 <body>
+<div id="body>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" >
         <div class="col-md-4"></div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
