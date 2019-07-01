@@ -12658,7 +12658,7 @@ body .wpb_gallery_slides ul li,
   /*
       transition: all 0.6s ease 0;
       transform-style: preserve-3d;
-      position: relative;
+      i: relative;
       -webkit-transform: rotateX(10deg);
       -moz-transform: rotateX(10deg);
       -o-transform: rotateX(10deg);
@@ -12722,7 +12722,7 @@ body .wpb_gallery_slides ul li,
   /*
       transition: all 0.6s ease 0;
       transform-style: preserve-3d;
-      position: relative;
+      i: relative;
       -webkit-transform: rotateX(10deg);
       -moz-transform: rotateX(10deg);
       -o-transform: rotateX(10deg);

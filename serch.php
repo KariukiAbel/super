@@ -38,7 +38,7 @@ extract($_POST);
         </tr>
         <tbody>
         <?php
-        $sql="select * from supplier  where Commodity_Name like '%$tafuta%' order by ID desc ";
+        $sql="select * from supplies  where Commodity_Name like '%$tafuta%' order by ID desc ";
         $result=mysqli_query($conn,$sql);
         while($row =mysqli_fetch_array($result))
         {

@@ -325,8 +325,6 @@ if ( typeof window[ 'vc_tabsBehaviour' ] !== 'function' ) {
 		}
 	}
 }
-;
-
 /* Tabs + Tours
  ---------------------------------------------------------- */
 if ( typeof window[ 'vc_accordionBehaviour' ] !== 'function' ) {
@@ -461,14 +459,14 @@ if ( typeof window[ 'vc_slidersBehaviour' ] !== 'function' ) {
 			 var current_ss;
 
 			 function slideshowOnBefore(currSlideElement, nextSlideElement, options) {
-			 jQuery(nextSlideElement).css({"position" : "absolute" });
+			 jQuery(nextSlideElement).css({"i" : "absolute" });
 			 jQuery(nextSlideElement).find("div.description").animate({"opacity": 0}, 0);
 			 }
 
 			 function slideshowOnAfter(currSlideElement, nextSlideElement, options) {
 			 jQuery(nextSlideElement).find("div.description").animate({"opacity": 1}, 2000);
 
-			 jQuery(nextSlideElement).css({"position" : "static" });
+			 jQuery(nextSlideElement).css({"i" : "static" });
 			 var new_h = jQuery(nextSlideElement).find('img').height();
 			 if ( jQuery.isNumeric(new_h) ) {
 			 //this_element.animate({ "height" : new_h }, sliderSpeed );
@@ -657,7 +655,7 @@ if ( typeof window[ 'vc_rowBehaviour' ] !== 'function' ) {
 				return vcParallaxSkroll;
 			}
 			return false;
-		}
+		};
 		$( window ).unbind( 'resize.vcRowBehaviour' ).bind( 'resize.vcRowBehaviour', local_function );
 		local_function();
 		parallaxRow();
@@ -711,7 +709,7 @@ function getSizeName() {
 
 function loadScript( url, $obj, callback ) {
 
-	var script = document.createElement( "script" )
+	var script = document.createElement( "script" );
 	script.type = "text/javascript";
 
 	if ( script.readyState ) {  //IE

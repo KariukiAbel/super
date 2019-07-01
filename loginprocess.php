@@ -36,7 +36,7 @@ else{
         $_SESSION['Name'] = $names;
         $_SESSION['Email'] = $mail;
         echo "<script>
-alert('Log in successful..!!');location.href='../index.php';
+alert('Log in successful..!!');location.href='index.php';
 </script>";
 
     }

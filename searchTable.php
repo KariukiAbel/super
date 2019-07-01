@@ -22,7 +22,7 @@
 <body>
 <?php
 include 'connect.php';
-$sql= "select count(*) from supplier";
+$sql= "select count(*) from supplies";
 $result = mysqli_query($conn ,$sql);
 $row = mysqli_fetch_row($result);
 $number = $row[0];
@@ -44,7 +44,7 @@ echo "<h4> We have $number items</h4>"
              </tr>
         <tbody>
         <?php
-        $sql="select * from supplier order by ID desc ";
+        $sql="select * from supplies order by ID desc ";
         $result=mysqli_query($conn,$sql);
         while($row =mysqli_fetch_array($result))
         {
