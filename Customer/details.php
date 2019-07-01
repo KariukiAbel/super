@@ -7,3 +7,4 @@
  */
 
 include '../connect.php';
+$sql=mysqli_query($conn,"select * from Customer_Details where");
