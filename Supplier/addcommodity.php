@@ -37,7 +37,7 @@ if (isset($_POST['sub'])) {
                         array_push($upload,$fileNameNew);
                         $imagestr=implode(",",$upload);
                         $fileDestination = 'images/' . $fileNameNew;
-
+                        move_uploaded_file($file_tmp, $fileDestination);
 
 
                     } else {
@@ -56,7 +56,7 @@ alert('You cannot upload this type of file');
         }
         $sql2 = mysqli_query($conn, "insert into supplies (`ID`, `Commodity_Name`, `Unit_Measure`,  `Supplier_Name`, `Price`, `Photo`)
                     values (null,'$comname','$measure','$suppliername','Ksh $price','$imagestr')");
-        move_uploaded_file($file_tmp, $fileDestination);
+
 //        echo "<script>alert('Upload sucessfull..');location.href='../searchTable.php'</script>";
 
     }

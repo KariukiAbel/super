@@ -14,54 +14,49 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.bundle.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/jquery.min.js">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+<?php include 'navbar.php';?>
 <div id="body>
 <div class="container-fluid">
     <div class="row" >
         <div class="col-md-4"></div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <div>
-
-                <a>
-                    <button class="btn-danger" id="login">Images <span class="glyphicon glyphicon-th"></span></button>
-                </a>
-
-               <div class="dropdown">
-                     <button class="dropbtn btn-danger">Services <span class="caret" role="button"></span> </button>
-                     <div class="dropdown-content">
-                         <ul>
-                             <li>
-                                 <a href="#">Link 1</a>
-                             </li>
-                             <li>
-                                 <a href="#">Link 2</a>
-                             </li>
-                             <li>
-                                 <a href="#">Link 2</a>
-                             </li>
-                             <li>
-                                 <a href="#">Link 2</a>
-                             </li>
-                         </ul>
-
-                     </div>
-                 </div>
-
-                <a href="login.php">
-                    <button class="btn btn-danger" id="login"><span class="glyphicon glyphicon-log-in "></span> Log in</button></a>
-
-
-                </div>
+<!--            <div>-->
+<!---->
+<!--                <a>-->
+<!--                    <button class="btn-danger" id="login">Images <span class="glyphicon glyphicon-th"></span></button>-->
+<!--                </a>-->
+<!---->
+<!--               <div class="dropdown">-->
+<!--                     <button class="dropbtn btn-danger">Services <span class="caret" role="button"></span> </button>-->
+<!--                     <div class="dropdown-content">-->
+<!--                         <ul>-->
+<!--                             <li>-->
+<!--                                 <a href="#">Link 1</a>-->
+<!--                             </li>-->
+<!--                             <li>-->
+<!--                                 <a href="#">Link 2</a>-->
+<!--                             </li>-->
+<!--                             <li>-->
+<!--                                 <a href="#">Link 2</a>-->
+<!--                             </li>-->
+<!--                             <li>-->
+<!--                                 <a href="#">Link 2</a>-->
+<!--                             </li>-->
+<!--                         </ul>-->
+<!---->
+<!--                     </div>-->
+<!--                 </div>-->
+<!---->
+<!--                <a href="login.php">-->
+<!--                    <button class="btn btn-danger" id="login"><span class="glyphicon glyphicon-log-in "></span> Log in</button></a>-->
+<!---->
+<!---->
+<!--                </div>-->
 
         </div>
     </div>

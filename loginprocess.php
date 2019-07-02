@@ -5,11 +5,11 @@
  * Date: 19/06/2019
  * Time: 12:36
  */
-$pwd=md5($pwd);
+$pass=md5($pwd);
 extract($_POST);
 include 'connect.php';
 //suppliers
-$sql="select * from supplier1 where Email='$mail' and Password='$pwd'";
+$sql="select * from supplier1 where Email='$mail' and Password='$pass'";
 $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 $count=mysqli_num_rows($result);
 
@@ -26,7 +26,7 @@ alert('Log in successful..!!');location.href='Supplier/commodities.php';
 </script>";
 }
 else{
-    $sql2="select * from Customer_Details where Email='$mail' and Password='$pwd'";
+    $sql2="select * from Customer_Details where Email='$mail' and Password='$pass'";
     $result2=mysqli_query($conn,$sql2);
     $count2=mysqli_num_rows($result2);
     if ($count2==1){

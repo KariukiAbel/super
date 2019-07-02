@@ -15,16 +15,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.bundle.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/jquery.min.js">
-    <link rel="stylesheet" type="text/css" href="bootstrap/js/jquery.min.js">
 </head>
 <body>
+<?php include 'navbar.php'?>
 <div class="container-fluid">
     <div class="row" style="border: solid 1px">navigation bar</div>
     <div class="row">
