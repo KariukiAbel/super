@@ -19,33 +19,75 @@
 <body>
 <?php include 'navbar.php'?>
 <div class="container-fluid">
-    <div class="row" style="border: solid 1px">navigation bar</div>
-    <div class="row">
-        <div class="col-sm-2" style="border: solid 1px">
-            <div class="row"  style="border: solid 1px">Related products</div>
-            <div class="row" style="border: solid 1px">Partner Links</div>
-            </div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+<!--    <div class="col-sm-4">-->
+<!--        <div class="card" style="width: 18rem;">-->
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Card title</h5>-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col-sm-4">-->
+<!--                   <div class="card" style="width: 18rem;">-->
+<!--                <img class="card-img-top" src="..." alt="Card image cap">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title</h5>-->
+<!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--    </div>-->
+<!--    <div class="col-sm-4">-->
+<!--        <div class="card" style="width: 18rem;">-->
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Card title</h5>-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</div>-->
 
-        <div class="col-sm-7" style="border: solid 1px">
-            <div class="row">
-                <div class="col-md-4" style="border: solid 1px">ssssss</div>
-                 <div class="col-md-4" style="border: solid 1px">vvvvvv</div>
-                 <div class="col-md-4" style="border: solid 1px">ffffff</div>
-            </div>
-        </div>
-
-           <div class="col-sm-3" style="border: solid 1px">Service chartter
-            <div class="row" style="border: solid 1px">aaaaaa</div>
-            <div class="row" style="border: solid 1px">aaaaaa</div>
-            <div class="row" style="border: solid 1px">
-                <div class="col-md-4" style="border: solid 1px">vvvvvvvv</div>
-                <div class="col-md-4" style="border: solid 1px">vvvvvvvv</div>
-                <div class="col-md-4" style="border: solid 1px"
-                >vvvvvvvv</div>
-            </div>
+<div class="card-group">
+    <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-    <div class="row" style="border: solid 1px">footer</div>
+    <div class="card">
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
 </div>
+</div>
+    <div class="col-sm-2"></div>
+</div>
+   <?php include 'footer.php';?>
 </body>
 </html>
